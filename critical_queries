@@ -1,0 +1,4 @@
+#First critical query
+Select * from achievement where EID=1023 order by AchID desc
+#Second critical query
+select a.AchID,a.type,a.Month,a.pillar,a.BU,a.title,a.category,a.Currency,a.description,a.EID,e.firstname,e.lastname,e.EID,a.client,a.industry,a.country,a.currency,a.BU,a.pillar,a.year from  achievement a , employee e where  e.EID = a.EID and a.Month= 2 and a.year=2012 order by AchID DESC;
